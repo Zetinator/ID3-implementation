@@ -1,4 +1,4 @@
-classdef id3
+classdef id3 < handle
   properties
     fatherID;
     ID;
@@ -42,7 +42,7 @@ classdef id3
       % When given the data matrix the "class" always in the first column... the rest of the columns are features...
       featureLabels = [1:size(data,2)-1];
       obj.descendant = [];
-      obj.descendant = [obj.descendant, pseudoID3_E(data,featureLabels,0,0,0,0)];
+      obj.descendant = [obj.descendant, pseudoID3_E(data,featureLabels,0,0,0,0)]
 
       display('SUCCESS')
     end
