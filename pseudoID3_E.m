@@ -17,7 +17,7 @@ function [descendant] = pseudoID3_E(data,featureLabels,ID,featureToCheck,classMa
       % leaf founded
       strID = sprintf('%s', dicomuid);
       descendant = [id3(ID, strID, featureToCheck, classMark, width, numOfClass)];
-      fprintf('node: %s found class: %d \n', descendant(1).ID, numOfClass);
+      fprintf('node: %s can now unequivocally classify the class: %d \n', descendant(1).ID, numOfClass);
     else
       % Sturges rule to select a good number of intervals for the histogram.
       numInterval = ceil(1+log2(size(nonzeros(features(:,1)),1)));
