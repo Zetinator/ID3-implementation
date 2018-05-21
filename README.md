@@ -16,6 +16,7 @@ To generate the tree just create a new  object `id3`
   data = csvread('fisher.csv')
   example = id3
   example.createTree(data)
+  example.plot()
 
 ```
 
