@@ -47,8 +47,12 @@ classdef id3 < handle
       display('SUCCESS')
     end
 
-    function [success] = test(obj)
-      % Just a test...
+    function [success] = plot(obj)
+      % plot the tree model graph
+      tree = plotTree(obj,[],0);
+      tree = tree - 1;
+      treeplot(tree);
+
       display('SUCCESS')
     end
 
