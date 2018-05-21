@@ -1,5 +1,9 @@
 function [descendant] = pseudoID3_E(data,featureLabels,ID,featureToCheck,classMark,width)
-  display(data)
+  % -------------------------------------------------------------------
+  % Uncomment next line to see the recursive tables in action
+  % display(data)
+  % -------------------------------------------------------------------
+
   % ID3 code
   % The class always in the first column... the rest of the columns are features...
   features = data(:,2:size(data,2));
